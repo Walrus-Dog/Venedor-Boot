@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gudea&family=Oswald:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Venedor</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <section class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="top-header-nav">
+                            <ul class="nav top-header-list">
+                                <li class="top-header-list-item">
+                                    <a href="#link">
+                                        <svg class="icon icon-edit top-header-icon"><use xlink:href="#icon-edit"></use></svg>
+                                    </a>
+                                    <a href="#link">
+                                        <p class="top-nav-text">My Wishlist (0)</p>
+                                    </a>
+                                </li>
+                                <li class="top-header-list-item">
+                                    <a href="#link">
+                                        <svg class="icon icon-user top-header-icon"><use xlink:href="#icon-user"></use></svg>
+                                    </a>
+                                    <a href="#link">
+                                        <p class="top-nav-text">My Account</p>
+                                    </a>
+                                </li>
+                                <li class="top-header-list-item">
+                                    <a href="#link">
+                                        <svg class="icon icon-cart top-header-icon"><use xlink:href="#icon-cart"></use></svg>
+                                    </a>
+                                    <a href="#link">
+                                        <p class="top-nav-text">Shopping Cart</p>
+                                    </a>
+                                </li>
+                                <li class="top-header-list-item">
+                                    <a href="#link">
+                                        <svg class="icon icon-checkmark top-header-icon"><use xlink:href="#icon-checkmark"></use></svg>
+                                    </a>
+                                    <a href="#link">
+                                        <p class="top-nav-text">Checkout</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <p class="top-header-right-text text-right">Welcome visitor, you can <a href="#link">login</a> or <a href="#link">create an account</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mid-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="#link">
+                            <img src="/bootstrap/venedor-boot/media/logo.PNG" alt="logo" class="logo-img img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <div class="dropdown-div-top justify-content-end">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown top-mid-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    US Dollar
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item mid-header-dropdown-item" href="#">Euro</a>
+                                    <a class="dropdown-item mid-header-dropdown-item" href="#">Pound</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown top-mid-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="/bootstrap/venedor-boot/media/england-flag.png" alt="england-flag"> English
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item mid-header-dropdown-item" href="#"><img src="/bootstrap/venedor-boot/media/italy-flag.png" alt="italy-flag"> Italian</a>
+                                    <a class="dropdown-item mid-header-dropdown-item" href="#"><img src="/bootstrap/venedor-boot/media/spain-flag.png" alt="spain-flag"> Spanish</a>
+                                    <a class="dropdown-item mid-header-dropdown-item" href="#"><img src="/bootstrap/venedor-boot/media/france-flag.png" alt="france-flag"> French</a>
+                                    <a class="dropdown-item mid-header-dropdown-item" href="#"><img src="/bootstrap/venedor-boot/media/germany-flag.png" alt="germany-flag"> German</a>
+                                </div>
+                            </div> 
+                            <button class="btn mid-header-button">
+                                <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg> 0 item(s) - $0.00
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="low-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="low-header-nav">
+                            <ul class="nav low-header-nav-list">
+                                <li class="low-header-nav-list-item">
+                                    <a href="#link">Fashion</a>
+                                </li>
+                                <li class="low-header-nav-list-item">
+                                    <a href="#link">Electronics</a>
+                                </li>
+                                <li class="low-header-nav-list-item">
+                                    <a href="#link"> Gifts</a>
+                                </li>
+                                <li class="low-header-nav-list-item">
+                                    <a href="#link">Books</a>
+                                </li>
+                                <li class="low-header-nav-list-item">
+                                    <a href="#link">At Home</a>
+                                </li>
+                                <li class="low-header-nav-list-item">
+                                    <a href="#link">Music</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <div class="low-header-searchbar-div justify-content-end">
+                            <input type="text" placeholder="Search here..." class="low-header-searchbar">
+                            <a href="#link">
+                                <svg class="icon icon-search low-header-icon"><use xlink:href="#icon-search"></use></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main" id="main">
+        <section class="main-caro-sec">
+            <div class="container">
+                <div class="row">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner position-relative main-caro">
+                            <div class="carousel-item active caro-img1">
+                                <img src="/bootstrap/venedor-boot/media/slide1_1.png" class="slide1_1 d-block w-20" alt="slide1_1">
+                            <div class="caro-text1 position-absolute d-sm-none">
+                                <h2 class="caro-header1">NEW</h2>
+                                <h2 class="caro-header2">Men's Collection</h2>
+                                <p class="caro-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At optio obcaecati cumque minima distinctio molestias modi dolore dolor, porro deleniti pariatur aliquam maiores et, incidunt aut! Quam, sapiente. Voluptate ab rem voluptatibus optio facilis!</p>
+                                <button class="btn caro-button">Shop Now</button>
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/bootstrap/venedor-boot/media/slide2_1.png" class="slide1_2 d-block w-20" alt="slide2_1">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="/bootstrap/venedor-boot/media/slide3_1.png" class="slide1_3 d-block w-20 img-fluid" alt="slide3_1">
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-addver-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#link">
+                            <img src="media/free-shipping.png" alt="free-shipping" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#link">
+                            <img src="media/sale.png" alt="sale" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#link">
+                            <img src="media/new-arrivals.png" alt="new-arrivals" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-latest-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <h2 class="latest-header"><span class="latest-header-rail">|</span> Latest</h2>
+                    </div>
+                    <div class="col-8">
+                        <p class="late-line"></p>
+                    </div>
+                    <div class="col-2 d-flex justify-content-end">
+                        <h3 class="late-ind">
+                            <span class="late-ind-left">
+                                <button class="btn ind-button">&lt;</button>
+                            </span>
+                            <span class="late-ind-right">
+                                <button class="btn ind-button">&gt;</button>
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="latest-text">Buy discount items from the latest collections of world brands.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card late-card" style="width: 18rem;">
+                            <img src="/bootstrap/venedor-boot/media/item1.PNG" class="card-img-top img-fluid" alt="item1">
+                            <div class="card-body">
+                                <h5 class="card-title text-center late-header">Phasellus consequat</h5>
+                                <a href="#" class="btn w-50 d-flex justify-content-center late-button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card late-card" style="width: 18rem;">
+                            <img src="/bootstrap/venedor-boot/media/item2.PNG" class="card-img-top img-fluid" alt="img2">
+                            <div class="card-body">
+                                <h5 class="card-title text-center late-header">Phasellus consequat</h5>
+                                <a href="#" class="btn d-flex w-50 justify-content-center late-button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-sm-none d-lg-block col-lg-4 col-xl-3">
+                        <div class="card late-card" style="width: 18rem;">
+                            <img src="/bootstrap/venedor-boot/media/item3.PNG" class="card-img-top img-fluid" alt="img3">
+                            <div class="card-body">
+                                <h5 class="card-title text-center late-header">Phasellus consequat</h5>
+                                <a href="#" class="btn d-flex w-50 justify-content-center late-button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-sm-none d-xl-block col-xl-3">
+                        <div class="card late-card" style="width: 18rem;">
+                            <img src="/bootstrap/venedor-boot/media/item4.PNG" class="card-img-top img-fluid" alt="item4">
+                            <div class="card-body">
+                                <h5 class="card-title text-center late-header">Phasellus consequat</h5>
+                                <a href="#" class="btn d-flex w-50 justify-content-center late-button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-welcome-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="welcome-header">
+                            <span class="welcome-rail">|</span> Welcome to Venedor
+                        </h2>
+                        <p class="welcome-text1">
+                            Venedor is a fully responsive PSD theme designed for all types of platforms:
+                            WooCommerce, Magento, OpenCart, PrestaShop, and others. Based on Bootsrtap's 12 column 1200px responsive grid template. Great looks on desktops, tablets and mobile devices.
+                        </p>
+                        <p class="welcome-text2 d-sm-none">
+                            Sed interdum magna sit amet orci tristique blandit. Etiam id justo consequat quam viverra alementum. Sed ac manga sed massa rhoncus elementum et ac aguge. Morbi non tellus nisi. Pellentesque habitant morbi tristique senectus. Vestibulum rutrum egestas mattis. Lorem ipsum dolor sit amet, consectetur aipiscing elit.
+                        </p>
+                        <p class="welcome-text3">
+                            <a href="#link">Buy Venedor Theme!</a>
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <img src="/bootstrap/venedor-boot/media/showcase.png" alt="showcase" class="img-fluid welcome-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-onsale-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-2">
+                        <h2 class="onsale-header"><span class="onsale-header-rail">|</span> Bestsellers</h2>
+                    </div>
+                    <div class="col-8">
+                        <p class="late-line"></p>
+                    </div>
+                    <div class="col-2 d-flex justify-content-end">
+                        <h3 class="late-ind">
+                            <span class="late-ind-left">
+                                <button class="btn ind-button">&lt;</button>
+                            </span>
+                            <span class="late-ind-right">
+                                <button class="btn ind-button">&gt;</button>
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="onsale-text">Special offers and biggest discounts for the most popular products.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card late-card" style="width: 18rem;">
+                            <img src="/bootstrap/venedor-boot/media/item1.PNG" class="card-img-top" alt="item1">
+                            <div class="card-body">
+                                <h5 class="card-title text-center late-header">Phasellus consequat</h5>
+                                <a href="#" class="btn w-50 d-flex justify-content-center late-button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card late-card" style="width: 18rem;">
+                            <img src="/bootstrap/venedor-boot/media/item2.PNG" class="card-img-top" alt="img2">
+                            <div class="card-body">
+                                <h5 class="card-title text-center late-header">Phasellus consequat</h5>
+                                <a href="#" class="btn d-flex w-50 justify-content-center late-button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-sm-none d-lg-block col-lg-4 col-xl-3">
+                        <div class="card late-card" style="width: 18rem;">
+                            <img src="/bootstrap/venedor-boot/media/item3.PNG" class="card-img-top" alt="img3">
+                            <div class="card-body">
+                                <h5 class="card-title text-center late-header">Phasellus consequat</h5>
+                                <a href="#" class="btn d-flex w-50 justify-content-center late-button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-sm-none d-xl-block col-xl-3">
+                        <div class="card late-card" style="width: 18rem;">
+                            <img src="/bootstrap/venedor-boot/media/item4.PNG" class="card-img-top" alt="item4">
+                            <div class="card-body">
+                                <h5 class="card-title text-center late-header">Phasellus consequat</h5>
+                                <a href="#" class="btn d-flex w-50 justify-content-center late-button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-manu-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 col-sm-6">
+                        <h2 class="man-header"><span class="man-header-rail">|</span> Manufacturers</h2>
+                    </div>
+                    <div class="col-8">
+                        <p class="late-line"></p>
+                    </div>
+                    <div class="col-2 d-flex justify-content-end">
+                        <h3 class="late-ind">
+                            <span class="late-ind-left">
+                                <button class="btn ind-button">&lt;</button>
+                            </span>
+                            <span class="late-ind-right">
+                                <button class="btn ind-button">&gt;</button>
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="/bootstrap/venedor-boot/media/brand-logo.png" alt="brand-logo" class="img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="/bootstrap/venedor-boot/media/brand-logo.png" alt="brand-logo" class="img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="/bootstrap/venedor-boot/media/brand-logo.png" alt="brand-logo" class="img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="/bootstrap/venedor-boot/media/brand-logo.png" alt="brand-logo" class="img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="/bootstrap/venedor-boot/media/brand-logo.png" alt="brand-logo" class="img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="/bootstrap/venedor-boot/media/brand-logo.png" alt="brand-logo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <section class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="top-footer-header">Sign up to receive the latest fashion news</h3>
+                    </div>
+                    <div class="col-6">
+                        <form>
+                            <div class="form-group d-flex">
+                                <input type="email" class="form-control top-footer-email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+                                <button class="top-footer-button btn">Sign up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <h3 class="footer-main-header">My Account</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#link">My account</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#link">Personal information</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#link">Addresses</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#link">Discount</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#link">Order history</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#link">Your vouchers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h3 class="footer-main-header">Information</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#link">New products</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#link">Top sellers</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#link">Specials</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#link">Manufacturers</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#link">Suppliers</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#link">Our stores</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h3 class="footer-main-header">From Twitter</h3>
+                        <p class="main-footer-text">
+                            Donec et tortor orci. Vestibulum ante ipsum primis in faucibus orci luctus et eltrices posuere cubilia Curae
+                            <a href="#link">http://t.co/MqacjST476</a>
+                            <span class="main-footer-lower-text">about 1 hours ago</span>
+                        </p>
+                        <p class="main-footer-text">
+                            <p class="main-footer-text">
+                                Aliquam aliquam fermentum arcu. Sed et manga dolor, eu fermentum enim. Aliquam
+                                <a href="#link">http://t.co/CCkfps248sq</a> consectur ligula
+                                <span class="main-footer-lower-text">about 1 hours ago</span>
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer-fb-header-div d-flex">
+                            <h3 class="footer-main-header">Facebook</h3>
+                            <button class="btn main-footer-button"><svg class="icon icon-like"><use xlink:href="#icon-like"></use></svg> Like!</button>
+                        </div>
+                        <p class="fb-text">1452 people like <a href="#link">PromoKit</a></p>
+                        <div class="row">
+                            <div class="col-4 fb-img-div">
+                                <a href="#link">
+                                    <img src="/bootstrap/venedor-boot/media/zuck1.png" alt="zuck1" class="fb-img img-fluid">
+                                </a>
+                                <a href="#link">
+                                    <p class="footer-fb-text">Zuckfeind</p>
+                                </a>
+                            </div>
+                            <div class="col-4 fb-img-div">
+                                <a href="#link">
+                                    <img src="/bootstrap/venedor-boot/media/zuck2.png" alt="zuck2" class="fb-img img-fluid">
+                                </a>
+                                <a href="#link">
+                                    <p class="footer-fb-text">Zuckmaster</p>
+                                </a>
+                            </div>
+                            <div class="col-4 fb-img-div">
+                                <a href="#link">
+                                    <img src="/bootstrap/venedor-boot/media/zuck3.png" alt="zuck3" class="fb-img img-fluid">
+                                </a>
+                                <a href="#link">
+                                    <p class="footer-fb-text">Zuckbeast</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 fb-img-div">
+                                <a href="#link">
+                                    <img src="/bootstrap/venedor-boot/media/zuck4.png" alt="zuck4" class="fb-img img-fluid">
+                                </a>
+                                <a href="#link">
+                                    <p class="footer-fb-text">Zuckman</p>
+                                </a>
+                            </div>
+                            <div class="col-4 fb-img-div">
+                                <a href="#link">
+                                    <img src="/bootstrap/venedor-boot/media/zuck5.png" alt="zuck5" class="fb-img img-fluid">
+                                </a>
+                                <a href="#link">
+                                    <p class="footer-fb-text">Zuckinator</p>
+                                </a>
+                            </div>
+                            <div class="col-4 class fb-img-div">
+                                <a href="#link">
+                                    <img src="/bootstrap/venedor-boot/media/zuck6.png" alt=" zuck6" class="fb-img img-fluid">
+                                </a>
+                                <a href="#link">
+                                    <p class="footer-fb-text">Zuckster</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="colophon">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="col-icon-div">
+                            <a href="#link">
+                                <svg class="icon icon-facebook footer-icon"><use xlink:href="#icon-facebook"></use></svg>
+                            </a>
+                            <a href="#link">
+                                <svg class="icon icon-tumblr footer-icon"><use xlink:href="#icon-tumblr"></use></svg>
+                            </a>
+                            <a href="#link">
+                                <svg class="icon icon-rss footer-icon"><use xlink:href="#icon-rss"></use></svg>
+                            </a>
+                            <a href="#link">
+                                <svg class="icon icon-delicious footer-icon"><use xlink:href="#icon-delicious"></use></svg>
+                            </a>
+                            <a href="#link">
+                                <svg class="icon icon-linkedin2 footer-icon"><use xlink:href="#icon-linkedin2"></use></svg>
+                            </a>
+                            <a href="#link">
+                                <svg class="icon icon-flickr footer-icon"><use xlink:href="#icon-flickr"></use></svg>
+                            </a>
+                            <a href="#link">
+                                <svg class="icon icon-skype footer-icon"><use xlink:href="#icon-skype"></use></svg>
+                            </a>
+                            <a href="#link">
+                                <svg class="icon icon-envelope footer-icon"><use xlink:href="#icon-envelope"></use></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <p class="col-text">
+                            &copy; 2021 Powered by <a href="#link">WaldogCommerce</a> &trade;. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+        <symbol id="icon-envelope" viewBox="0 0 20 20">
+        <path d="M18 2c1.105 0 2 0.895 2 2v0 12c0 1.105-0.895 2-2 2v0h-16c-1.105 0-2-0.895-2-2v0-12c0-1.1 0.9-2 2-2h16zM13.63 11.1l6.37 4.9v-2l-5.12-3.9 5.12-4.1v-2l-10 8-10-8v2l5.12 4.1-5.12 3.9v2l6.37-4.9 3.63 2.9 3.63-2.9z"></path>
+        </symbol>
+        <symbol id="icon-search" viewBox="0 0 24 24">
+        <path d="M16.041 15.856c-0.034 0.026-0.067 0.055-0.099 0.087s-0.060 0.064-0.087 0.099c-1.258 1.213-2.969 1.958-4.855 1.958-1.933 0-3.682-0.782-4.95-2.050s-2.050-3.017-2.050-4.95 0.782-3.682 2.050-4.95 3.017-2.050 4.95-2.050 3.682 0.782 4.95 2.050 2.050 3.017 2.050 4.95c0 1.886-0.745 3.597-1.959 4.856zM21.707 20.293l-3.675-3.675c1.231-1.54 1.968-3.493 1.968-5.618 0-2.485-1.008-4.736-2.636-6.364s-3.879-2.636-6.364-2.636-4.736 1.008-6.364 2.636-2.636 3.879-2.636 6.364 1.008 4.736 2.636 6.364 3.879 2.636 6.364 2.636c2.125 0 4.078-0.737 5.618-1.968l3.675 3.675c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path>
+        </symbol>
+        <symbol id="icon-edit" viewBox="0 0 24 24">
+        <path d="M11 3h-7c-0.828 0-1.58 0.337-2.121 0.879s-0.879 1.293-0.879 2.121v14c0 0.828 0.337 1.58 0.879 2.121s1.293 0.879 2.121 0.879h14c0.828 0 1.58-0.337 2.121-0.879s0.879-1.293 0.879-2.121v-7c0-0.552-0.448-1-1-1s-1 0.448-1 1v7c0 0.276-0.111 0.525-0.293 0.707s-0.431 0.293-0.707 0.293h-14c-0.276 0-0.525-0.111-0.707-0.293s-0.293-0.431-0.293-0.707v-14c0-0.276 0.111-0.525 0.293-0.707s0.431-0.293 0.707-0.293h7c0.552 0 1-0.448 1-1s-0.448-1-1-1zM17.793 1.793l-9.5 9.5c-0.122 0.121-0.217 0.28-0.263 0.465l-1 4c-0.039 0.15-0.042 0.318 0 0.485 0.134 0.536 0.677 0.862 1.213 0.728l4-1c0.167-0.041 0.33-0.129 0.465-0.263l9.5-9.5c0.609-0.609 0.914-1.41 0.914-2.207s-0.305-1.598-0.914-2.207-1.411-0.915-2.208-0.915-1.598 0.305-2.207 0.914zM19.207 3.207c0.219-0.219 0.504-0.328 0.793-0.328s0.574 0.109 0.793 0.328 0.328 0.504 0.328 0.793-0.109 0.574-0.328 0.793l-9.304 9.304-2.114 0.529 0.529-2.114z"></path>
+        </symbol>
+        <symbol id="icon-like" viewBox="0 0 32 32">
+        <path d="M29.164 10.472c-1.25-0.328-4.189-0.324-8.488-0.438 0.203-0.938 0.25-1.784 0.25-3.286 0-3.588-2.614-6.748-4.926-6.748-1.633 0-2.979 1.335-3 2.977-0.022 2.014-0.645 5.492-4 7.256-0.246 0.13-0.95 0.477-1.053 0.522l0.053 0.045c-0.525-0.453-1.253-0.8-2-0.8h-3c-1.654 0-3 1.346-3 3v16c0 1.654 1.346 3 3 3h3c1.19 0 2.186-0.719 2.668-1.727 0.012 0.004 0.033 0.010 0.047 0.012 0.066 0.018 0.144 0.037 0.239 0.062 0.018 0.005 0.027 0.007 0.046 0.012 0.576 0.143 1.685 0.408 4.055 0.953 0.508 0.116 3.192 0.688 5.972 0.688h5.467c1.666 0 2.867-0.641 3.582-1.928 0.010-0.020 0.24-0.469 0.428-1.076 0.141-0.457 0.193-1.104 0.023-1.76 1.074-0.738 1.42-1.854 1.645-2.58 0.377-1.191 0.264-2.086 0.002-2.727 0.604-0.57 1.119-1.439 1.336-2.766 0.135-0.822-0.010-1.668-0.389-2.372 0.566-0.636 0.824-1.436 0.854-2.176l0.012-0.209c0.007-0.131 0.013-0.212 0.013-0.5 0-1.263-0.875-2.874-2.836-3.434zM7 29c0 0.553-0.447 1-1 1h-3c-0.553 0-1-0.447-1-1v-16c0-0.553 0.447-1 1-1h3c0.553 0 1 0.447 1 1v16zM29.977 14.535c-0.020 0.494-0.227 1.465-1.977 1.465-1.5 0-2 0-2 0-0.277 0-0.5 0.224-0.5 0.5s0.223 0.5 0.5 0.5c0 0 0.438 0 1.938 0s1.697 1.244 1.6 1.844c-0.124 0.746-0.474 2.156-2.163 2.156-1.687 0-2.375 0-2.375 0-0.277 0-0.5 0.223-0.5 0.5 0 0.275 0.223 0.5 0.5 0.5 0 0 1.188 0 1.969 0 1.688 0 1.539 1.287 1.297 2.055-0.319 1.009-0.514 1.945-2.641 1.945-0.719 0-1.631 0-1.631 0-0.277 0-0.5 0.223-0.5 0.5 0 0.275 0.223 0.5 0.5 0.5 0 0 0.693 0 1.568 0 1.094 0 1.145 1.035 1.031 1.406-0.125 0.406-0.273 0.707-0.279 0.721-0.302 0.545-0.789 0.873-1.82 0.873h-5.467c-2.746 0-5.47-0.623-5.54-0.639-4.154-0.957-4.373-1.031-4.634-1.105 0 0-0.846-0.143-0.846-0.881l-0.007-13.812c0-0.469 0.299-0.893 0.794-1.042 0.062-0.024 0.146-0.050 0.206-0.075 4.568-1.892 5.959-6.040 6-9.446 0.006-0.479 0.375-1 1-1 1.057 0 2.926 2.122 2.926 4.748 0 2.371-0.096 2.781-0.926 5.252 10 0 9.93 0.144 10.812 0.375 1.094 0.313 1.188 1.219 1.188 1.531 0 0.343-0.010 0.293-0.023 0.629zM4.5 26c-0.828 0-1.5 0.672-1.5 1.5s0.672 1.5 1.5 1.5 1.5-0.672 1.5-1.5-0.672-1.5-1.5-1.5zM4.5 28c-0.275 0-0.5-0.225-0.5-0.5s0.225-0.5 0.5-0.5 0.5 0.225 0.5 0.5-0.225 0.5-0.5 0.5z"></path>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 32 32">
+        <path d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
+        </symbol>
+        <symbol id="icon-cart" viewBox="0 0 32 32">
+        <path d="M12 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+        <path d="M32 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+        <path d="M32 16v-12h-24c0-1.105-0.895-2-2-2h-6v2h4l1.502 12.877c-0.915 0.733-1.502 1.859-1.502 3.123 0 2.209 1.791 4 4 4h24v-2h-24c-1.105 0-2-0.895-2-2 0-0.007 0-0.014 0-0.020l26-3.98z"></path>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 32 32">
+        <path d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
+        </symbol>
+        <symbol id="icon-checkmark" viewBox="0 0 32 32">
+        <path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
+        </symbol>
+        <symbol id="icon-facebook" viewBox="0 0 32 32">
+        <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+        </symbol>
+        <symbol id="icon-rss" viewBox="0 0 32 32">
+        <path d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z"></path>
+        </symbol>
+        <symbol id="icon-flickr" viewBox="0 0 32 32">
+        <path d="M0 17c0-3.866 3.134-7 7-7s7 3.134 7 7c0 3.866-3.134 7-7 7s-7-3.134-7-7zM18 17c0-3.866 3.134-7 7-7s7 3.134 7 7c0 3.866-3.134 7-7 7s-7-3.134-7-7z"></path>
+        </symbol>
+        <symbol id="icon-tumblr" viewBox="0 0 32 32">
+        <path d="M18.001 14l-0 7.318c0 1.857-0.024 2.927 0.173 3.453 0.195 0.524 0.685 1.067 1.218 1.381 0.709 0.425 1.517 0.637 2.428 0.637 1.62 0 2.577-0.214 4.179-1.267v4.811c-1.366 0.642-2.558 1.019-3.666 1.279-1.109 0.258-2.308 0.388-3.596 0.388-1.463 0-2.327-0.184-3.45-0.552-1.124-0.371-2.083-0.9-2.876-1.579-0.795-0.685-1.344-1.413-1.652-2.182s-0.46-1.888-0.46-3.351v-11.222h-4.295v-4.531c1.256-0.408 2.661-0.993 3.556-1.755 0.899-0.764 1.618-1.678 2.16-2.748 0.543-1.067 0.917-2.429 1.121-4.079h5.159l-0 8h7.999v6h-7.999z"></path>
+        </symbol>
+        <symbol id="icon-skype" viewBox="0 0 32 32">
+        <path d="M13.3 1.169c-0.050-0.031-0.106-0.056-0.156-0.081-0.056 0.012-0.106 0.019-0.162 0.031l0.319 0.050z"></path>
+        <path d="M1.15 13.156c-0.012 0.056-0.019 0.113-0.025 0.162 0.031 0.050 0.050 0.1 0.081 0.15l-0.056-0.313z"></path>
+        <path d="M30.837 18.831c0.012-0.056 0.019-0.113 0.031-0.169-0.031-0.050-0.050-0.1-0.081-0.15l0.050 0.319z"></path>
+        <path d="M18.5 30.719c0.050 0.031 0.106 0.056 0.156 0.081 0.056-0.012 0.113-0.019 0.169-0.025l-0.325-0.056z"></path>
+        <path d="M30.869 18.663c-0.012 0.056-0.019 0.113-0.031 0.169l-0.056-0.325c0.031 0.056 0.056 0.106 0.087 0.156 0.163-0.9 0.25-1.819 0.25-2.738 0-2.037-0.4-4.019-1.188-5.881-0.762-1.8-1.85-3.419-3.238-4.806s-3.006-2.475-4.8-3.237c-1.863-0.788-3.844-1.188-5.881-1.188-0.963 0-1.925 0.088-2.863 0.269 0 0-0.006 0-0.006 0 0.050 0.025 0.106 0.050 0.156 0.081l-0.319-0.050c0.056-0.012 0.106-0.019 0.162-0.031-1.287-0.681-2.731-1.050-4.194-1.050-2.388 0-4.638 0.931-6.325 2.619s-2.619 3.937-2.619 6.325c0 1.519 0.394 3.019 1.125 4.338 0.012-0.056 0.019-0.113 0.025-0.162l0.056 0.319c-0.031-0.050-0.056-0.1-0.081-0.15-0.15 0.856-0.225 1.731-0.225 2.606 0 2.038 0.4 4.019 1.188 5.881 0.763 1.8 1.85 3.413 3.237 4.8s3.006 2.475 4.806 3.238c1.863 0.788 3.844 1.188 5.881 1.188 0.887 0 1.775-0.081 2.644-0.238-0.050-0.031-0.1-0.056-0.156-0.081l0.325 0.056c-0.056 0.012-0.113 0.019-0.169 0.025 1.337 0.756 2.856 1.163 4.4 1.163 2.387 0 4.637-0.931 6.325-2.619s2.619-3.938 2.619-6.325c-0.006-1.519-0.4-3.019-1.137-4.35zM16.069 25.181c-5.369 0-7.769-2.637-7.769-4.619 0-1.012 0.75-1.725 1.781-1.725 2.3 0 1.7 3.3 5.988 3.3 2.194 0 3.406-1.194 3.406-2.413 0-0.731-0.363-1.544-1.806-1.9l-4.775-1.194c-3.844-0.963-4.544-3.044-4.544-5 0-4.056 3.819-5.581 7.406-5.581 3.306 0 7.2 1.825 7.2 4.263 0 1.044-0.906 1.65-1.938 1.65-1.962 0-1.6-2.713-5.55-2.713-1.963 0-3.044 0.887-3.044 2.156s1.55 1.675 2.894 1.981l3.538 0.787c3.869 0.863 4.85 3.125 4.85 5.25 0 3.294-2.531 5.756-7.637 5.756z"></path>
+        </symbol>
+        <symbol id="icon-linkedin2" viewBox="0 0 32 32">
+        <path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
+        <path d="M2 12h6v18h-6v-18z"></path>
+        <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+        </symbol>
+        <symbol id="icon-delicious" viewBox="0 0 32 32">
+        <path d="M0 0v32h32v-32h-32zM16 30v-14h-14v-14h14v14h14v14h-14z"></path>
+        </symbol>
+        </defs>
+        </svg>
+        
+</body>
+</html>
